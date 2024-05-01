@@ -10,7 +10,8 @@ public class A3_Long_Substring_Without_Repeating_Char {
         
         
         for (int end = 0, start = 0; end < s.length(); end++) {
-            char currentChar = s.charAt(end);   
+            char currentChar = s.charAt(end);
+               
            
             if (map.containsKey(currentChar)) {
                 start = Math.max(start, map.get(currentChar) + 1);
