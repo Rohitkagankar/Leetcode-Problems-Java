@@ -1,4 +1,4 @@
-public class findMedianOfTwoSortedArr {
+public class A4_findMedianOfTwoSortedArr {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int total=nums1.length+nums2.length;
         int mid=total/2;
