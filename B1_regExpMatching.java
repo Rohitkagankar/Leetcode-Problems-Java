@@ -35,7 +35,6 @@ public class B1_regExpMatching {
 
     public static void main(String[] args) {
         B1_regExpMatching solution = new B1_regExpMatching();
-        // Test cases
         System.out.println(solution.isMatch("aa", "a"));
         System.out.println(solution.isMatch("aa", "a*"));
         System.out.println(solution.isMatch("ab", ".*"));
