@@ -14,7 +14,7 @@ public class B5_longCommPrefix {
                 break;
             }     
         }
-        return index==0 ? " " : str1.substring(0, index);
+        return index==0 ? "" : str1.substring(0, index);
 
     }
     public static void main(String[] args) {
