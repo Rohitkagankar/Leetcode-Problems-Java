@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class C4_gen_parenthesis {
+
     public List<String> generateParenthesis(int n) {
         List<String> result = new ArrayList<>();
         backtrack(result, "", 0, 0, n);
