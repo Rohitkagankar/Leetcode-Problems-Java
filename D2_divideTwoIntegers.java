@@ -34,6 +34,6 @@ public class D2_divideTwoIntegers {
         D2_divideTwoIntegers sol=new D2_divideTwoIntegers();
         int dividend = 10;
         int divisor = 3;
-        System.out.println(D2_divideTwoIntegers.divtwoInt(dividend, divisor));
+        System.out.println(sol.divide(dividend, divisor));
     }
 }
