@@ -11,7 +11,7 @@ public class H4_addBinary {
                 sum+=a.charAt(i--)-'0';
             }
             if(j>=0){
-                sum+=b.charAt(j)-'0';
+                sum+=b.charAt(j--)-'0';
             }
             result.append(sum%2);
             carry=sum/2;
@@ -23,7 +23,7 @@ public class H4_addBinary {
     }
     public static void main(String[] args) {
         H4_addBinary sol=new H4_addBinary();
-        String a="101";
+        String a="11";
         String b="001";
         System.out.println(sol.addBinary(a,b));
     }
