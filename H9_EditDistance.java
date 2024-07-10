@@ -25,8 +25,8 @@ public class H9_EditDistance {
     }
     public static void main(String[] args) {
         H9_EditDistance sol=new H9_EditDistance();
-        String s1="kitten";
-        String s2="sitting";
+        String s1="home";
+        String s2="pom";
         System.out.println(sol.editDistance(s1,s2));
     }
 }
