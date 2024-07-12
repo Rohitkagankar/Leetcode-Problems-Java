@@ -37,11 +37,11 @@ public class I9_RemoveDuplicatesFromList {
                 while (head.next != null && head.val == head.next.val) {
                     head = head.next;
                 }
-                prev.next = head.next;
+                prev.next = head.next; // Skip all duplicates
             } else {
-                prev = prev.next;
+                prev = prev.next; // Move prev pointer
             }
-            head = head.next;
+            head = head.next; // Move head pointer
         }
         
         return dummy.next;
