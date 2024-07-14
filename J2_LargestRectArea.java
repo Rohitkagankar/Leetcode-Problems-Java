@@ -1,7 +1,7 @@
 import java.util.Stack;
 
 public class J2_LargestRectArea {
-    public static int maxArea(int [] heights){
+    public int maxArea(int [] heights){
         Stack<Integer> stack = new Stack<>();
         int maxArea = 0;
         int n = heights.length;

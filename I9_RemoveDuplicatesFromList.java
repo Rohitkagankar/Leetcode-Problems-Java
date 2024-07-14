@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class I9_RemoveDuplicatesFromList {
     public static class ListNode{
         ListNode next;
