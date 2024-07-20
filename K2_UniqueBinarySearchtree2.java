@@ -8,39 +8,39 @@ public class K2_UniqueBinarySearchtree2 {
         TreeNode(int x) { val = x; }
     }
 
-    public List<TreeNode> generateTree(int n){
-        if(n==0){
+    public List<TreeNode> generateTrees(int n) {
+        if (n == 0) {
             return new ArrayList<>();
         }
-        return genTree(1,n);
+        return genTrees(1, n);
     }
-    
-    private List<TreeNode> genTree(int start, int end){
-        List<TreeNode> alltree=new ArrayList<>();
-        if(start > end){
-            alltree.add(null);
-            return alltree;
+
+    private List<TreeNode> genTrees(int start, int end) {
+        List<TreeNode> allTrees = new ArrayList<>();
+        if (start > end) {
+            allTrees.add(null);
+            return allTrees;
         }
-        for(int i=start; i<=end; i++){
 
-            List<TreeNode> lefttree=genTree(start, i-1);
-            List<TreeNode> righttree=genTree(i+1, end);
+        for (int i = start; i <= end; i++) {
+            List<TreeNode> leftTrees = genTrees(start, i - 1);
 
-            for(TreeNode left : lefttree){
-                for(TreeNode right : righttree){
-                    TreeNode currTree=new TreeNode(i);
-                    currTree.left=left;
-                    currTree.right=right;
-                    alltree.add(currTree);
+            List<TreeNode> rightTrees = genTrees(i + 1, end);
+
+            for (TreeNode left : leftTrees) {
+                for (TreeNode right : rightTrees) {
+                    TreeNode currTree = new TreeNode(i);
+                    currTree.left = left;
+                    currTree.right = right;
+                    allTrees.add(currTree);
                 }
             }
-
         }
-        return alltree;
+        return allTrees;
     }
     public static void main(String[] args) {
         K2_UniqueBinarySearchtree2 sol= new K2_UniqueBinarySearchtree2();
-        List<TreeNode> trees=sol.generateTree(3);
+        List<TreeNode> trees=sol.generateTrees(3);
 
         for (TreeNode root : trees) {
             System.out.println(treeToString(root));
