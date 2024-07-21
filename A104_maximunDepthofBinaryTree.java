@@ -1,4 +1,4 @@
-class K104_maximunDepthofBinaryTree{
+class A104_maximunDepthofBinaryTree{
     public static  class TreeNode {
         int val;
         TreeNode left;
@@ -21,7 +21,7 @@ class K104_maximunDepthofBinaryTree{
         root.left.left = new TreeNode(4);
         root.left.right = new TreeNode(5);
 
-        K104_maximunDepthofBinaryTree solution = new K104_maximunDepthofBinaryTree();
+        A104_maximunDepthofBinaryTree solution = new A104_maximunDepthofBinaryTree();
         int maxDepth = solution.maxDepth(root);
         
         System.out.println("Maximum depth of the binary tree is: " + maxDepth);
