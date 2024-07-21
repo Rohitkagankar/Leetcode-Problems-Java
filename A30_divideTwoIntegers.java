@@ -1,0 +1,39 @@
+public class A30_divideTwoIntegers {
+    public int divide(int dividend, int divisor) {
+        // Handle special cases
+        if (dividend == Integer.MIN_VALUE && divisor == -1) {
+            return Integer.MAX_VALUE; // Overflow case
+        }
+
+        // Determine the sign of the result
+        boolean isNegative = (dividend < 0) ^ (divisor < 0);
+
+        // Convert to positive numbers using long to prevent overflow
+        long absDividend = Math.abs((long) dividend);
+        long absDivisor = Math.abs((long) divisor);
+
+        // Initialize result
+        int result = 0;
+
+        // Perform the division using subtraction and bit shifting
+        while (absDividend >= absDivisor) {
+            long tempDivisor = absDivisor, multiple = 1;
+            while (absDividend >= (tempDivisor << 1)) {
+                tempDivisor <<= 1;
+                multiple <<= 1;
+            }
+            absDividend -= tempDivisor;
+            result += multiple;
+        }
+
+        return isNegative ? -result : result;
+    }
+
+
+    public static void main(String[] args) {
+        A30_divideTwoIntegers sol=new A30_divideTwoIntegers();
+        int dividend = 10;
+        int divisor = 3;
+        System.out.println(sol.divide(dividend, divisor));
+    }
+}
