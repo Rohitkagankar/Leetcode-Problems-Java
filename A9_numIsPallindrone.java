@@ -1,5 +1,5 @@
 public class A9_numIsPallindrone {
-    public static boolean isPalindrone(int x){
+    public boolean isPalindrone(int x){
         if(x<0){
             return false;
         }

@@ -7,7 +7,7 @@ public class A21_mergeTwoList {
         ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
     
-    static ListNode mergeTwoList(ListNode l1,ListNode l2){
+    public ListNode mergeTwoList(ListNode l1,ListNode l2){
         ListNode dummy = new ListNode(-1);
         ListNode current = dummy;
 

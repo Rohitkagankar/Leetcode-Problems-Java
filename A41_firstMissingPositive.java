@@ -1,5 +1,5 @@
 public class A41_firstMissingPositive {
-    public static int firstMissNumber(int [] nums){
+    public int firstMissNumber(int [] nums){
         int n=nums.length;
         for(int i=0; i<nums.length; i++){
             if(nums[i] <=0 || nums[i]>n){

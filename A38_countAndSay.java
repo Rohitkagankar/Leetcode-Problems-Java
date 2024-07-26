@@ -1,5 +1,5 @@
 public class A38_countAndSay {
-    public static String CountAndSay(int n){
+    public String CountAndSay(int n){
         String result="1";
         for(int i=1; i<n; i++){
             result=nextCount(result);
@@ -27,6 +27,6 @@ public class A38_countAndSay {
     public static void main(String[] args) {
         A38_countAndSay solution = new A38_countAndSay();
         int n = 4;
-        System.out.println("The " + n + "th term in the 'Count and Say' sequence is: " + A38_countAndSay.CountAndSay(n));
+        System.out.println("The " + n + "th term in the 'Count and Say' sequence is: " + solution.CountAndSay(n));
     }
 }

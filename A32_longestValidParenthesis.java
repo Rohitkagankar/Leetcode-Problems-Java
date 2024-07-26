@@ -1,7 +1,7 @@
 import java.util.Stack;
 
 public class A32_longestValidParenthesis {
-    public static int validParenthesis(String str){
+    public int validParenthesis(String str){
         Stack<Integer> s= new Stack<>();
         s.push(-1);
         int maxlength=0;

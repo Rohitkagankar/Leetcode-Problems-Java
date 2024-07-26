@@ -15,7 +15,7 @@ public class A12_Int_roman {
     }
     public static void main(String[] args) {
         A12_Int_roman sol=new A12_Int_roman();
-        int num=234;
+        int num=53;
         System.out.println(sol.intRoman(num));
     }
 }

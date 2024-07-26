@@ -1,5 +1,5 @@
 public class A11_ContainerWithMostWater {
-    public static int waterMaxArea(int[] height){
+    public int waterMaxArea(int[] height){
         if (height == null || height.length == 0) {
             return 0;
         }

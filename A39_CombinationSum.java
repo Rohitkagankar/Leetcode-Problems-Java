@@ -1,13 +1,13 @@
 import java.util.*;
 
 public class A39_CombinationSum {
-    public static List<List<Integer>> CombinationSum (int [] candidates,int target){
+    public List<List<Integer>> CombinationSum (int [] candidates,int target){
         List<List<Integer>> result=new ArrayList<>();
 
         backtrack(candidates,target,0,new ArrayList<>(),result);
         return result;
     }
-    private static void backtrack(int [] candidates, int target,int start,List<Integer> currentCombination,List<List<Integer>> result){
+    private void backtrack(int [] candidates, int target,int start,List<Integer> currentCombination,List<List<Integer>> result){
         if(target==0){
             result.add(new ArrayList<>(currentCombination));
             return;
@@ -15,7 +15,7 @@ public class A39_CombinationSum {
         if(target<0){
             return;
         }
-        for(int i=0; i<candidates.length; i++){
+        for(int i=start; i<candidates.length; i++){
             currentCombination.add(candidates[i]);
             backtrack(candidates, target-candidates[i], i, currentCombination, result);
             currentCombination.remove(currentCombination.size()-1);
