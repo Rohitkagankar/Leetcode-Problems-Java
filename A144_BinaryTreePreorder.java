@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
 
 class TreeNode {
     int val;
@@ -12,30 +11,27 @@ class TreeNode {
 public class A144_BinaryTreePreorder {
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> result = new ArrayList<>();
-        if (root == null) {
-            return result;
-        }
-
-        Stack<TreeNode> stack = new Stack<>();
-        stack.push(root);
-
-        while (!stack.isEmpty()) {
-            TreeNode node = stack.pop();
-            result.add(node.val);  // Visit the root
-
-            // Push right child first so that left child is processed first
-            if (node.right != null) {
-                stack.push(node.right);
-            }
-            if (node.left != null) {
-                stack.push(node.left);
-            }
-        }
-
+        preorder(root, result);
         return result;
     }
 
+    private void preorder(TreeNode node, List<Integer> result) {
+        if (node == null) {
+            return;
+        }
+        result.add(node.val);      // Visit the root
+        preorder(node.left, result);  // Traverse the left subtree
+        preorder(node.right, result); // Traverse the right subtree
+    }
+
     public static void main(String[] args) {
+        // Creating a sample binary tree:
+        //      1
+        //     / \
+        //    2   3
+        //   / \
+        //  4   5
+
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
