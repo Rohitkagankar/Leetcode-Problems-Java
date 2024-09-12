@@ -24,8 +24,7 @@ public class A506_relativeRank {
                 rankMap.put(score, String.valueOf(i + 1));
             }
         }
-        
-        // Create the result array with the ranks according to the original scores
+
         String[] result = new String[scores.length];
         for (int i = 0; i < scores.length; i++) {
             result[i] = rankMap.get(scores[i]);
