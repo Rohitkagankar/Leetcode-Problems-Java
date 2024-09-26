@@ -26,7 +26,8 @@ public class A179_LargestNumber {
     public static void main(String[] args) {
         A179_LargestNumber solution = new A179_LargestNumber();
         
-        int[] nums = {3, 30, 34, 5, 9};
+        // int[] nums = {3, 30, 34, 5, 9};
+        int [] nums={1,4,2,33,5,53,23};
         System.out.println(solution.largestNumber(nums));
     }
 }
