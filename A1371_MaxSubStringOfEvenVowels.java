@@ -50,6 +50,9 @@ public class A1371_MaxSubStringOfEvenVowels {
         A1371_MaxSubStringOfEvenVowels solution = new A1371_MaxSubStringOfEvenVowels();
         String input = "eleetminicoworoep"; // Example input
         int result = solution.findTheLongestSubstring(input);
+        String input1 = "aklfieadkss"; // Example input
         System.out.println("The length of the longest substring with vowels in even counts is: " + result);
+        int result1 = solution.findTheLongestSubstring(input1);
+        System.out.println("The length of the longest substring with vowels in even counts is: " + result1);
     }
 }
