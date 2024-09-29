@@ -32,6 +32,8 @@ public class A135_CandyDistribution {
     public static void main(String[] args) {
         A135_CandyDistribution solution = new A135_CandyDistribution();
         int[] ratings = {1, 0, 2};
+        int[] rating = {1,2,1,3,1,5};
         System.out.println(solution.candy(ratings)); // Output: 5
+        System.out.println(solution.candy(rating));
     }
 }
