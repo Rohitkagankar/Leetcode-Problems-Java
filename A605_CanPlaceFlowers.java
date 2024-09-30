@@ -26,6 +26,10 @@ public class A605_CanPlaceFlowers {
         int n1 = 1;
         System.out.println("Can place " + n1 + " flowers: " + solution.canPlaceFlowers(flowerbed1, n1)); // Output: true
 
+        int[] flowerbed = {1, 0, 0, 0, 1};
+        int n = 2;
+        System.out.println("Can place " + n1 + " flowers: " + solution.canPlaceFlowers(flowerbed, n)); // Output: false
+
     }
 }
 
