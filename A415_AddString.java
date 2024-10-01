@@ -28,5 +28,10 @@ public class A415_AddString {
         String result = solution.addStrings(num1, num2);
         System.out.println("Sum of " + num1 + " and " + num2 + " is: " + result);
 
+        String num3 = "452";
+        String num4 = "286";
+        String result1 = solution.addStrings(num3, num4);
+        System.out.println("Sum of " + num3 + " and " + num4 + " is: " + result1);
+
     }
 }
