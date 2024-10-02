@@ -24,5 +24,8 @@ public class A387_FirstUniqueChar {
         A387_FirstUniqueChar solution = new A387_FirstUniqueChar();
         String s = "leetcode";
         System.out.println("The index of the first unique character is: " + solution.firstUniqChar(s));
+        String s1 = "sisaldsfids";
+        System.out.println("The index of the first unique character is: " + solution.firstUniqChar(s1));
+    
     }
 }
