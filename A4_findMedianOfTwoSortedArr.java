@@ -35,8 +35,8 @@ public class A4_findMedianOfTwoSortedArr {
         return merged;
     }
     public static void main(String[] args) {
-        int []n1={1,3};
-        int []n2={2};
+        int []n1={1,3,5};
+        int []n2={2,4,6};
         System.out.println(findMedianSortedArrays(n1,n2));
     }
 }

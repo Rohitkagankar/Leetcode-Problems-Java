@@ -32,9 +32,12 @@ public class A19_LLremNthNode_last {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
         
-        int n = 2;
+        int n1 = 2;
         ListNode result = solution.removeNthFromEnd(head, n);
         
+        int n2 = 2;
+        ListNode result1 = solution.removeNthFromEnd(head, n);
+
         while (result != null) {
             System.out.print(result.val + " ");
             result = result.next;
