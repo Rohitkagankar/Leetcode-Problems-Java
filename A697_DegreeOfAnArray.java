@@ -36,5 +36,7 @@ public class A697_DegreeOfAnArray {
         A697_DegreeOfAnArray solution = new A697_DegreeOfAnArray();
         int[] nums = {1, 2, 2, 3, 1};
         System.out.println("Shortest subarray length: " + solution.findShortestSubArray(nums));  // Output: 2
+        int[] nums1 = {1, 2, 3,4,5,4,6,3,4};
+        System.out.println("Shortest subarray length: " + solution.findShortestSubArray(nums1));
     }
 }

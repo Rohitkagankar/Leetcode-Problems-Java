@@ -18,8 +18,8 @@ public class A169_MajarityElement {
     public static void main(String[] args) {
         A169_MajarityElement solution = new A169_MajarityElement();
 
-        int[] nums1 = {3, 2, 3};
-        int[] nums2 = {2, 2, 1, 1, 1, 2, 2};
+        int[] nums1 = {3,2,3,3,2,3,2,5,3};
+        int[] nums2 = {2, 2, 1, 1, 1, 2, 2,5,2};
 
         System.out.println("Majority element in " + Arrays.toString(nums1) + " is: " + solution.majorityElement(nums1));
         System.out.println("Majority element in " + Arrays.toString(nums2) + " is: " + solution.majorityElement(nums2));
