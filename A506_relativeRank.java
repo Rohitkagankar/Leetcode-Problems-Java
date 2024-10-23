@@ -38,5 +38,8 @@ public class A506_relativeRank {
         int[] scores = {10, 3, 8, 9, 4};
         String[] result = solution.findRelativeRanks(scores);
         System.out.println(Arrays.toString(result));
+        int[] score = {12,5,2,6,7,14};
+        String[] result1 = solution.findRelativeRanks(score);
+        System.out.println(Arrays.toString(result1));
     }
 }
