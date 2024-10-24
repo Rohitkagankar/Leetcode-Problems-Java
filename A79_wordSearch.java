@@ -34,5 +34,7 @@ public class A79_wordSearch {
         char [][] board={{'A','B','C'},{'E','F','G'},{'H','I','J'}};
         String word="ABFIHE";
         System.out.println(sol.isfind(board,word));
+        String word1="DIEAHIW";
+        System.out.println(sol.isfind(board,word1));
     }
 }
