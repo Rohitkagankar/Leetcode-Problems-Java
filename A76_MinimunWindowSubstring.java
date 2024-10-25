@@ -71,5 +71,8 @@ public class A76_MinimunWindowSubstring {
         String s = "ADOBECODEBANC";
         String t = "ABC";
         System.out.println(solution.minWindow(s, t)); 
+        String s1 = "ASDIENALEFJASE";
+        String t1 = "DSA";
+        System.out.println(solution.minWindow(s1, t1)); 
     }
 }
