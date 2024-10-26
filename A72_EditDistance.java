@@ -28,5 +28,8 @@ public class A72_EditDistance {
         String s1="home";
         String s2="pom";
         System.out.println(sol.editDistance(s1,s2));
+        String p1="lete";
+        String p2="ete";
+        System.out.println(sol.editDistance(p1,p2));
     }
 }
